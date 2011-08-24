@@ -26,8 +26,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-<<<<<<< HEAD
     $(LOCAL_DIR)/vibrantmtd.mk
-=======
-    $(LOCAL_DIR)/full_vibrantmtd.mk
->>>>>>> origin/gingerbread
