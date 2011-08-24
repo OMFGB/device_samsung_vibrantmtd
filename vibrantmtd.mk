@@ -38,19 +38,11 @@
 # These is the hardware-specific overlay, which points to the location
 # of hardware-specific resource overrides, typically the frameworks and
 # application settings that are stored in resourced.
-<<<<<<< HEAD
 DEVICE_PACKAGE_OVERLAYS := device/samsung/vibrantmtd/overlay
 
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES = \
     device/samsung/vibrantmtd/asound.conf:system/etc/asound.conf \
-=======
-DEVICE_PACKAGE_OVERLAYS := device/samsung/aries-common/overlay
-
-# These are the hardware-specific configuration files
-PRODUCT_COPY_FILES = \
-        device/samsung/vibrantmtd/asound.conf:system/etc/asound.conf \
->>>>>>> origin/gingerbread
 	device/samsung/aries-common/vold.fstab:system/etc/vold.fstab \
 	device/samsung/aries-common/egl.cfg:system/lib/egl/egl.cfg
 
@@ -58,18 +50,11 @@ PRODUCT_COPY_FILES = \
 PRODUCT_COPY_FILES += \
 	device/samsung/aries-common/init.rc:root/init.rc \
 	device/samsung/vibrantmtd/init.aries.rc:root/init.aries.rc \
-<<<<<<< HEAD
 	device/samsung/aries-common/ueventd.aries.rc:root/ueventd.aries.rc \
 	device/samsung/aries-common/setupenv.sh:recovery/root/sbin/setupenv.sh
 
 
-=======
-	device/samsung/aries-common/lpm.rc:root/lpm.rc \
-	device/samsung/aries-common/ueventd.aries.rc:root/ueventd.aries.rc \
-	device/samsung/aries-common/setupenv.sh:recovery/root/sbin/setupenv.sh
 
->>>>>>> origin/gingerbread
-# Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
 	device/samsung/vibrantmtd/cypress-touchkey.kl:system/usr/keylayout/cypress-touchkey.kl \
 	device/samsung/aries-common/sec_jack.kl:system/usr/keylayout/sec_jack.kl \
@@ -119,11 +104,7 @@ PRODUCT_COPY_FILES += \
 
 # apns config file
 PRODUCT_COPY_FILES += \
-<<<<<<< HEAD
          device/samsung/vibrantmtd/apns-conf.xml:system/etc/apns-conf.xml
-=======
-        vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
->>>>>>> origin/gingerbread
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -201,7 +182,6 @@ PRODUCT_COPY_FILES += \
 # of the aspects that require proprietary drivers that aren't
 # commonly available
 $(call inherit-product-if-exists, vendor/samsung/vibrantmtd/vibrantmtd-vendor.mk)
-<<<<<<< HEAD
 $(call inherit-product, build/target/product/full_base.mk)
 
 # Discard inherited values and use our own instead.
@@ -210,5 +190,3 @@ PRODUCT_DEVICE := vibrantmtd
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SGH-T959
-=======
->>>>>>> origin/gingerbread
