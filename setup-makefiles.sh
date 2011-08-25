@@ -96,14 +96,9 @@ BOARD_NO_PAGE_FLIPPING := false
 BOARD_NO_32BPP := false
 EOF
 
-<<<<<<< HEAD
 mkdir -p ../../../vendor/$MANUFACTURER/aries-common/overlay/packages/apps/Launcher2/res/layout
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__MANUFACTURER__/$MANUFACTURER/g > ../../../vendor/$MANUFACTURER/aries-common/overlay/packages/apps/Launcher2/res/layout/all_apps.xml
-=======
 
-mkdir -p ../../../vendor/$MANUFACTURER/$COMMON/overlay/packages/apps/Launcher2/res/layout
-(cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__MANUFACTURER__/$MANUFACTURER/g > ../../../vendor/$MANUFACTURER/$COMMON/overlay/packages/apps/Launcher2/res/layout/all_apps.xml
->>>>>>> origin/gingerbread
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2010 The Android Open Source Project
 
